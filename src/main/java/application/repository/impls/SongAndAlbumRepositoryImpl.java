@@ -1,8 +1,8 @@
-package repository.impls;
+package application.repository.impls;
 
-import model.*;
-import repository.AlbumRepository;
-import repository.SongRepository;
+import application.model.*;
+import application.repository.AlbumRepository;
+import application.repository.SongRepository;
 
 import java.util.ArrayList;
 import java.util.List;

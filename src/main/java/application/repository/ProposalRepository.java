@@ -1,6 +1,6 @@
-package repository;
+package application.repository;
 
-import model.Proposal;
+import application.model.Proposal;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,7 +1,7 @@
-package repository;
+package application.repository;
 
-import model.HitParade;
-import model.Song;
+import application.model.HitParade;
+import application.model.Song;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

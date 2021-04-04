@@ -1,8 +1,8 @@
-package repository;
+package application.repository;
 
-import model.Album;
-import model.Genre;
-import model.Song;
+import application.model.Album;
+import application.model.Genre;
+import application.model.Song;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

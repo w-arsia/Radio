@@ -1,13 +1,13 @@
-package configuration;
+package application.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import repository.HitProgramRepository;
-import repository.ProposalProgramRepository;
-import repository.SongRepository;
-import repository.impls.HitProgramRepositoryImpl;
-import repository.impls.ProposalProgramRepositoryImpl;
-import repository.impls.SongAndAlbumRepositoryImpl;
+import application.repository.HitProgramRepository;
+import application.repository.ProposalProgramRepository;
+import application.repository.SongRepository;
+import application.repository.impls.HitProgramRepositoryImpl;
+import application.repository.impls.ProposalProgramRepositoryImpl;
+import application.repository.impls.SongAndAlbumRepositoryImpl;
 
 @Configuration
 public class AppConfig {

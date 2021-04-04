@@ -1,9 +1,8 @@
-package repository.impls;
+package application.repository.impls;
 
-import model.HitParade;
-import model.RadioProgram;
-import model.Song;
-import repository.HitProgramRepository;
+import application.model.HitParade;
+import application.model.Song;
+import application.repository.HitProgramRepository;
 
 import java.util.ArrayList;
 import java.util.List;

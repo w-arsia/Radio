@@ -1,12 +1,12 @@
-package service;
+package application.service;
 
-import model.Genre;
-import model.HitParade;
-import model.Song;
+import application.model.Genre;
+import application.model.HitParade;
+import application.model.Song;
 import org.springframework.beans.factory.annotation.Autowired;
-import repository.impls.HitProgramRepositoryImpl;
-import repository.impls.ProposalProgramRepositoryImpl;
-import repository.impls.SongAndAlbumRepositoryImpl;
+import application.repository.impls.HitProgramRepositoryImpl;
+import application.repository.impls.ProposalProgramRepositoryImpl;
+import application.repository.impls.SongAndAlbumRepositoryImpl;
 
 import java.sql.Time;
 import java.util.Comparator;

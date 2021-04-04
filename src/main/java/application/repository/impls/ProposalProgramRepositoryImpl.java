@@ -1,13 +1,10 @@
-package repository.impls;
+package application.repository.impls;
 
-import model.HitParade;
-import model.Proposal;
-import model.ProposalsParade;
-import model.Song;
-import repository.ProposalProgramRepository;
+import application.model.ProposalsParade;
+import application.model.Song;
+import application.repository.ProposalProgramRepository;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ProposalProgramRepositoryImpl implements ProposalProgramRepository {
