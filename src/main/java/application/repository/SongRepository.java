@@ -10,5 +10,5 @@ public interface SongRepository {
 
     Song findByName (String name);
     List<Song> findBySinger (String singerName);
-
+    List<Song> findByGenre(String genreName);
 }

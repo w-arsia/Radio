@@ -1,25 +1,37 @@
 package application.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 import java.sql.Time;
 import java.util.Date;
 import java.util.List;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "proposal_parade")
 public class ProposalsParade extends RadioProgram {
 
     private List<Proposal> proposals;
 
-    public ProposalsParade(List<Song> songs, Date date, Time time, List<Proposal> proposals) {
-        super(songs, date, time);
-        this.proposals = proposals;
-    }
+    /*уникальное поле */
+    @Id
+    @GeneratedValue
+    @Column(insertable = false, updatable = false)
+    private int id;
 
-    public List<Proposal> getProposals() {
-        return proposals;
-    }
+    /*дата проигрывания программы */
+    private Date date;
+    /*время проигрывания программы */
+    private Time time;
 
-    public void setProposals(List<Proposal> proposals) {
-        this.proposals = proposals;
-    }
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "radio_program_id")
+    private RadioProgram radioProgram;
 
 
 }
